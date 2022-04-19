@@ -12,7 +12,11 @@ This is where ZooKeeper becomes useful. When the first server wants to read a fi
 
 **Cluster** - A group of systems in which a distributed application is running.
 
-**Node** - Each machine running in a cluster.
+**Node** - A machine running in a cluster.
+
+**Client** - One of the nodes in our distributed application cluster.
+
+**Server** - One of the nodes in our ZooKeeper ensemble.
 
 **Ensemble** - A group of ZooKeeper servers.
 
