@@ -28,8 +28,12 @@ ZooKeeper has a Client-Server Architecture.
 
 # Features of ZooKeeper
 
+## Naming Service
+
+## Configuration Management
+
 ## Leader Election
-https://www.tutorialspoint.com/zookeeper/zookeeper_leader_election.htm
+In a ZooKeeper ensemble, one node will be the leader and the others will be the followers. The process is described [here](https://www.tutorialspoint.com/zookeeper/zookeeper_leader_election.htm), but the gist is that to do it from scratch is pretty hard and ZooKeeper simplifies the process.
 
 # How Many ZooKeeper Nodes Should I Have In My Ensemble?
 
@@ -49,3 +53,6 @@ If we have **four nodes**, we can do a comparison with three nodes. If two nodes
 
 **Some Other Important Things**
 ZooKeeper was designed to store coordination data. and it should probably not be used as a database.
+
+## Credits/Sources
+https://www.tutorialspoint.com/zookeeper/index.htm
