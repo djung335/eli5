@@ -1,6 +1,6 @@
-Apache ZooKeeper
+#Apache ZooKeeper
 
-What is Apache ZooKeeper?
+#What is Apache ZooKeeper?
 
 Simply put, ZooKeeper is a service to manage distributed applications. ZooKeeper acts similarly to how an actual zookeeper goes around to all the animals and tends to them.
 
@@ -10,6 +10,6 @@ However, we could run into a problem. How can we ensure that the same file is no
 
 This is where ZooKeeper becomes useful. When the first server wants to read a file, it can write to the ZooKeeper the file name its going to process. Now the rest of the servers can look up ZooKeeper and know that this file is already picked up by the first server.
 
-Some Things To Know About ZooKeeper
+#Some Things To Know About ZooKeeper
 
 
