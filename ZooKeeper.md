@@ -47,7 +47,8 @@ If we have **three nodes**. if one goes down then we do have a majority (2/3). T
 
 If we have **four nodes**, we can do a comparison with three nodes. If two nodes go down, then we do not have a majority in either situation, and so having 3 or 4 nodes is essentially the same thing. Having the extra node is pointless, and this is a good example of why nodes should be added in odd numbers.
 
-
+**ZooKeeper Reads/Writes**
+Because of the process described above, ZooKeeper does not perform well for write-dominant workloads. However, **ZooKeeper excels at reads** because they are served to the client by the specific server they connect to.
 
 **Some Other Important Things**
 ZooKeeper was designed to store coordination data. and it should probably not be used as a database.
