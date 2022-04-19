@@ -28,7 +28,7 @@ ZooKeeper has a Client-Server Architecture.
 
 # How Many ZooKeeper Nodes Should I Have In My Ensemble?
 
-This is an important question because of how writes are handled in a ZooKeeper ensemble. If a client wants to send data in the ensemble, a server recieves the request and sends that to the leader. which will then reissue the request to all the followers. The write request will succeed only if a majority of the nodes (also known as a quorum) respond successfully.
+This is an important question because of how writes are handled in a ZooKeeper ensemble. If a client wants to send data in the ensemble, a server recieves the request and sends that to the leader. which will then reissue the request to all the followers. The write request will succeed **only if a majority of the nodes** (also known as a quorum) **respond successfully**.
 
 A few examples:
 
