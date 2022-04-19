@@ -26,6 +26,20 @@ This is where ZooKeeper becomes useful. When the first server wants to read a fi
 
 ZooKeeper has a Client-Server Architecture.
 
+# How Many ZooKeeper Nodes Should I Have In My Ensemble?
+
+This is an important question because of how writes are handled in a ZooKeeper ensemble. If a client wants to send data in the ensemble, a server recieves the request and sends that to the leader. which will then reissue the request to all the followers. The write request will succeed only if a majority of the nodes (also known as a quorum) respond successfully.
+
+A few examples:
+
+If we have **one node**, then we have a [single point of failure](https://en.wikipedia.org/wiki/Single_point_of_failure). In other words, if this single node goes down, the entire ZooKeeper ensemble goes down which is not desirable.
+
+If we have **two nodes**. if one goes down then we do not have a majority (1/2).
+
+If we have **three nodes**. if one goes down then we do have a majority (2/3). Three nodes is the minimum number of nodes for a working ZooKeeper ensemble.
+
+If we have **four nodes**, we can do a comparison with three nodes. If two nodes go down, then we do not have a majority in either situation, and so having 3 or 4 nodes is essentially the same thing. Having the extra node is pointless, and this is a good example of why nodes should be added in odd numbers.
+
 
 
 **Some Other Important Things**
