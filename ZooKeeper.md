@@ -10,17 +10,15 @@ This is where ZooKeeper becomes useful. When the first server wants to read a fi
 
 # Some Definitions To Know:
 
-**Cluster** - A group of systems in which a distributed application is running.
-
-**Node** - A machine running in a cluster.
-
-**Client** - One of the nodes in our distributed application cluster.
-
-**Server** - One of the nodes in our ZooKeeper ensemble.
-
-**Ensemble** - A group of ZooKeeper servers.
-
-**znode** - A ZooKeeper node.
+| Word      | Definition |
+| ----------- | ----------- |
+| Cluster      |  A group of systems in which a distributed application is running.       |
+| Node   | A machine running in a cluster.    |
+| Client   |One of the nodes in our distributed application cluster.   |
+| Server   | One of the nodes in our ZooKeeper ensemble.    |
+| Node   | A machine running in a cluster.    |
+| Ensemble   |A group of ZooKeeper servers.   |
+| znode   |A ZooKeeper node.   |
 
 ![image](https://user-images.githubusercontent.com/44933949/163919426-8a2c4862-cb27-4bf0-a9b1-842ea8834944.png)
 
