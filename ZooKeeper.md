@@ -26,6 +26,11 @@ This is where ZooKeeper becomes useful. When the first server wants to read a fi
 
 ZooKeeper has a Client-Server Architecture.
 
+# Features of ZooKeeper
+
+## Leader Election
+https://www.tutorialspoint.com/zookeeper/zookeeper_leader_election.htm
+
 # How Many ZooKeeper Nodes Should I Have In My Ensemble?
 
 This is an important question because of how writes are handled in a ZooKeeper ensemble. If a client wants to send data in the ensemble, a server recieves the request and sends that to the leader. which will then reissue the request to all the followers. The write request will succeed **only if a majority of the nodes** (also known as a quorum) **respond successfully**.
